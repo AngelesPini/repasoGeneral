@@ -10,7 +10,7 @@
   color: blue;
 }
 .cuartaSection .contenedor {
-  background-color: red;
+  background-color: pink;
   width: 150px;
   height: 150px;
 }
@@ -23,4 +23,8 @@
 .tituloHeader {
   height: 150px;
   padding: 50px;
+  font-size: 25px;
+}
+* {
+  font-family: "Shantell Sans", cursive;
 }
