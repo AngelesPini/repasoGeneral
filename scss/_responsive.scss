@@ -1,0 +1,108 @@
+$rosadoFuerte: #ff1493;
+$rosadoClaro: #fc8dc8;
+$fontGrande: 80px;
+
+$ancho: 300px;
+
+
+
+
+@mixin botones{
+    background-color: $rosadoFuerte;
+    color: #fff;
+    border: solid 1px $rosadoFuerte;
+}
+
+
+@media screen and (max-width:768px){
+    header{
+        text-align: center;
+        .headerTitle{
+            background-color: beige;
+            h1{
+                font-size: 25px;
+            }
+        }
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px ;
+        .brandPage{
+            img{
+                width: 50px;
+                height: auto;
+            }
+        }
+        ul{
+            display: flex;
+            gap: 5px;
+            a{
+                text-decoration: none;
+                li{
+                    list-style-type: none;
+                }
+            }
+        }
+    }
+    main{
+        section{
+        padding: 25px 8px;        
+        }
+        // primera seccion
+        .first{
+            background-color: red;
+            width: 100%;
+    
+            .contenedorCards{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                gap: 5px;
+                .card{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    padding: 16px 12px;
+                    width: 80%;
+                    .cardTitle{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    
+        // segunda seccion
+        .second{
+            .contenedorNosotros{
+                display: flex;
+                flex-direction: column;
+                h4{
+                    color: $rosadoClaro;
+                    font-size: 45px;
+                }
+            }
+            .revert{
+                h4{
+                    text-align: start;
+                }
+            }
+        }
+        // tercera seccion
+        .third{
+            .contenedorServicios{
+                .cuadrado{
+                    background-color: $rosadoFuerte;
+                    width: $ancho;
+                    height: ($ancho+20px)-50px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:769px) and (max-width:1200px){
+
+}

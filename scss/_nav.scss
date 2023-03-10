@@ -1,0 +1,22 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    .brandPage{
+        img{
+            width: 100px;
+            height: auto;
+        }
+    }
+    ul{
+        display: flex;
+        gap: 15px;
+        a{
+            text-decoration: none;
+            li{
+                list-style-type: none;
+            }
+        }
+    }
+}

@@ -1,26 +1,134 @@
-.tercerSection .rojo strong {
-  font-weight: 900;
-  color: red;
-}
-.tercerSection p i {
-  font-weight: 900;
-  color: red;
-}
-.tercerSection .azul strong {
-  color: blue;
-}
-.cuartaSection .contenedor {
-  background-color: red;
-  width: 150px;
-  height: 150px;
-}
+header {
+  text-align: center; }
+  header .headerTitle {
+    background-color: beige; }
+    header .headerTitle h1 {
+      font-size: 50px; }
 
-.segundaSection #contacto {
+nav {
   display: flex;
-  flex-direction: column;
-  padding-top: 150px;
-}
-.tituloHeader {
-  height: 150px;
-  padding: 50px;
-}
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px; }
+  nav .brandPage img {
+    width: 100px;
+    height: auto; }
+  nav ul {
+    display: flex;
+    gap: 15px; }
+    nav ul a {
+      text-decoration: none; }
+      nav ul a li {
+        list-style-type: none; }
+
+main section {
+  padding: 50px 120px; }
+
+main .first {
+  background-color: red;
+  width: 100%; }
+  main .first .contenedorCards {
+    display: flex;
+    justify-content: space-around;
+    gap: 25px; }
+    main .first .contenedorCards .card {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      padding: 16px 12px;
+      width: 80%; }
+      main .first .contenedorCards .card .cardTitle {
+        text-align: center; }
+      main .first .contenedorCards .card .cardImg {
+        width: 100%;
+        text-align: center; }
+        main .first .contenedorCards .card .cardImg img {
+          width: 80%;
+          height: auto; }
+      main .first .contenedorCards .card .cardBody p {
+        font-size: 16px; }
+      main .first .contenedorCards .card .cardBody p:hover {
+        color: #ff1493; }
+      main .first .contenedorCards .card .cardButton {
+        display: flex;
+        justify-content: end; }
+        main .first .contenedorCards .card .cardButton button {
+          background-color: #ff1493;
+          color: #fff;
+          border: solid 1px #ff1493; }
+        main .first .contenedorCards .card .cardButton button:hover {
+          background-color: #fff;
+          color: #ff1493; }
+
+main .second .contenedorNosotros {
+  display: flex;
+  flex-direction: column; }
+  main .second .contenedorNosotros h4 {
+    color: #fc8dc8;
+    font-size: 45px; }
+
+main .second .revert h4 {
+  text-align: end; }
+
+main .third .contenedorServicios .cuadrado {
+  background-color: #ff1493;
+  width: 300px;
+  height: 270px; }
+
+@media screen and (max-width: 768px) {
+  header {
+    text-align: center; }
+    header .headerTitle {
+      background-color: beige; }
+      header .headerTitle h1 {
+        font-size: 25px; }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px; }
+    nav .brandPage img {
+      width: 50px;
+      height: auto; }
+    nav ul {
+      display: flex;
+      gap: 5px; }
+      nav ul a {
+        text-decoration: none; }
+        nav ul a li {
+          list-style-type: none; }
+  main section {
+    padding: 25px 8px; }
+  main .first {
+    background-color: red;
+    width: 100%; }
+    main .first .contenedorCards {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      gap: 5px; }
+      main .first .contenedorCards .card {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 16px 12px;
+        width: 80%; }
+        main .first .contenedorCards .card .cardTitle {
+          text-align: center; }
+  main .second .contenedorNosotros {
+    display: flex;
+    flex-direction: column; }
+    main .second .contenedorNosotros h4 {
+      color: #fc8dc8;
+      font-size: 45px; }
+  main .second .revert h4 {
+    text-align: start; }
+  main .third .contenedorServicios .cuadrado {
+    background-color: #ff1493;
+    width: 300px;
+    height: 270px; } }
+
+* {
+  margin: 0;
+  padding: 0; }

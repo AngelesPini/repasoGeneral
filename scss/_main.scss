@@ -1,0 +1,97 @@
+$rosadoFuerte: #ff1493;
+$rosadoClaro: #fc8dc8;
+
+
+$ancho: 300px;
+
+
+
+
+@mixin botones{
+    background-color: $rosadoFuerte;
+    color: #fff;
+    border: solid 1px $rosadoFuerte;
+}
+
+
+main{
+    section{
+    padding: 50px 120px;        
+    }
+    // primera seccion
+    .first{
+        background-color: red;
+        width: 100%;
+
+        .contenedorCards{
+            display: flex;
+            justify-content: space-around;
+            gap: 25px;
+            .card{
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                padding: 16px 12px;
+                width: 80%;
+                .cardTitle{
+                    text-align: center;
+                }
+                .cardImg{
+                    width: 100%;
+                    text-align: center;
+                    img{
+                        width: 80%;
+                        height: auto;
+                    }
+                }
+                .cardBody{
+                    p{
+                        font-size: 16px;
+
+                    }
+                    p:hover{
+                        color:$rosadoFuerte;
+                    }
+                }
+                .cardButton{
+                    display: flex;
+                    justify-content: end;
+                    button{
+                        @include botones();
+                    }
+                    button:hover{
+                        background-color: #fff;
+                        color: $rosadoFuerte;
+                    }
+                }
+            }
+        }
+    }
+
+    // segunda seccion
+    .second{
+        .contenedorNosotros{
+            display: flex;
+            flex-direction: column;
+            h4{
+                color: $rosadoClaro;
+                font-size: 45px;
+            }
+        }
+        .revert{
+            h4{
+                text-align: end;
+            }
+        }
+    }
+    // tercera seccion
+    .third{
+        .contenedorServicios{
+            .cuadrado{
+                background-color: $rosadoFuerte;
+                width: $ancho;
+                height: ($ancho+20px)-50px;
+            }
+        }
+    }
+}
